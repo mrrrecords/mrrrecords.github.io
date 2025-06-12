@@ -1,15 +1,6 @@
+<?xml version="1.0" ?>
 <addons>
-<addon id="plugin.video.ytslite" name="YTS Lite" version="1.0.0" provider-name="YourName">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-    </requires>
-    <extension point="xbmc.python.plugin" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>YTS movie streaming with Debrid, Trakt, Subtitles, Filters, and Metadata</summary>
-        <description>A full-featured Kodi add-on to stream YTS content using Real-Debrid, Trakt, TMDb, and subtitles</description>
-        <platform>all</platform>
-    </extension>
-</addon>
+  <addon id="plugin.program.ascleaner" name="AS Cleaner" version="1.0.0" provider-name="mrrecords"/>
+  <addon id="plugin.video.ytslite" name="YTSLite" version="1.0.0" provider-name="mrrecords"/>
+  <addon id="service.subtitles.yts_subs_lite" name="YTS Subtitles Lite" version="1.0.0" provider-name="mrrecords"/>
 </addons>
