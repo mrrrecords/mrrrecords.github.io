@@ -1,6 +1,54 @@
-<?xml version="1.0" ?>
-<addons>
-  <addon id="plugin.program.ascleaner" name="AS Cleaner" version="1.0.0" provider-name="mrrecords"/>
-  <addon id="plugin.video.ytslite" name="YTSLite" version="1.0.0" provider-name="mrrecords"/>
-  <addon id="service.subtitles.yts_subs_lite" name="YTS Subtitles Lite" version="1.0.0" provider-name="mrrecords"/>
-</addons>
+<?xml version='1.0' encoding='utf-8'?>
+<addons><addon id="plugin.program.ascleaner" name="AS Cleaner" version="1.0.0" provider-name="MRREC">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.addon.program" library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary>AS Cleaner</summary>
+    <description>Tool to clean Kodi cache and temp files on Android systems.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <icon>icon.png</icon>
+  </extension>
+</addon><addon id="plugin.video.ytslite" name="YTS Lite" version="1.0.0" provider-name="YourName">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.plugin" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>YTS movie streaming with Debrid, Trakt, Subtitles, Filters, and Metadata</summary>
+        <description>A full-featured Kodi add-on to stream YTS content using Real-Debrid, Trakt, TMDb, and subtitles</description>
+        <platform>all</platform>
+    </extension>
+</addon><addon id="repository.asrepo" version="1.0.0" name="AS Repo" provider-name="mrrecords">
+    <extension point="xbmc.addon.repository" name="AS Repo">
+        <info compressed="false">https://mrrecords.github.io/addons.xml</info>
+        <checksum>https://mrrecords.github.io/addons.xml.md5</checksum>
+        <datadir zip="true">https://mrrecords.github.io/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>AS Repo for Kodi Omega</summary>
+        <description>Official Kodi repository for AS Cleaner and YTS Subtitles Lite addons.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <source />
+        <website>https://mrrecords.github.io</website>
+    </extension>
+</addon><addon id="service.subtitles.yts_subs_lite" name="YTS Subtitles Lite" version="1.0.0" provider-name="MRREC">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.subtitle.module" library="scraper/yify.py">
+    <subtitles lang="en" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>YTS Subtitle Scraper</summary>
+    <description>Fetches subtitles from yts-subs (Lite version)</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <icon>icon.png</icon>
+  </extension>
+</addon></addons>
