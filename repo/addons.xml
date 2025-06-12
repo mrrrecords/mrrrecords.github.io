@@ -1,21 +1,16 @@
 <addons>
-<addon id="service.subtitles.yts_subs_lite"
-       name="YTS Subtitles Lite"
-       version="1.0.0"
-       provider-name="MRREC">
-  <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
-  </requires>
-  <extension point="xbmc.subtitle.module"
-             library="scraper/yify.py">
-    <subtitles lang="en"/>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>YTS Subtitle Scraper</summary>
-    <description>Fetches subtitles from yts-subs (Lite version)</description>
-    <platform>all</platform>
-    <license>MIT</license>
-    <icon>icon.png</icon>
-  </extension>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.ascleaner" version="1.0.0" name="AS Cleaner" provider-name="You">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.program" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>AS Cleaner for Kodi v21 Omega</summary>
+        <description>Clears cache, thumbnails, packages, and addon data. Includes Clear All and Auto-Clean on startup.</description>
+        <platform>all</platform>
+    </extension>
 </addon>
 </addons>
