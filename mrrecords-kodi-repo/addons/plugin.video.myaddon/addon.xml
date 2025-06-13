@@ -1,0 +1,8 @@
+<addon id="plugin.video.myaddon" name="My Test Addon" version="1.0.0" provider-name="mrrecords">
+    <extension point="xbmc.python.pluginsource" library="default.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">My First Kodi Addon</summary>
+        <description lang="en">A basic test addon for Kodi installation via GitHub.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
